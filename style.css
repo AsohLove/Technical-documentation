@@ -6,36 +6,34 @@ body {
 }
 #sidebar {
   list-style-type: none;
-
 }
 
- pre {
-  background-color: rgb(241, 239, 236);
+pre {
+  background-color: rgb(241 239 236);
   margin: 15px;
   padding: 15px;
- }
+}
 
- #nav-document {
+#nav-document {
   position: fixed;
   top: 0;
   left: 0;
   padding: 20px;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   border-right: 1px solid black;
   overflow-y: auto;
  }
 
  #nav-document,
-  a {
+a {
   cursor: pointer;
   display: block;
   text-decoration: none;
   padding: 5px 10px;
- 
- }
+}
 
- #content {
+#content {
   display: flex;
   height: 100vh;
 }
@@ -46,4 +44,3 @@ body {
   position: absolute;
   padding: 20px;
 }
-
