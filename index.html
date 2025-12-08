@@ -85,11 +85,11 @@
                 <h2>Hello world</h2>
                 <article>
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-                    <pre> 
-                        function greetMe(yourName) { alert("Hello " + yourName); }
-                        greetMe("World")
-                   </pre> 
-                    <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+                <pre>
+                    function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("world")
+                </pre>
+                Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
                 </article>
             </section>
 
@@ -109,20 +109,14 @@
                 <article>
                 <p>You can declare a variable in three ways: </p>
                         <p>With the keyword var. For example,</p>
-                        <pre>
-                            var x = 42.
-                        </pre>
+                        <pre>var x = 42.</pre>
                         This syntax can be used to declare both local and global variables.
                         By simply assigning it a value. For example,
-                        <pre>
-                            x = 42.
-                        </pre>
+                        <pre>x = 42.</pre>
                         <p>This always declares a global variable. It generates a strict JavaScript warning.
                         You shouldn't use this variant. </p>
                         <p>With the keyword let. For example,</p>
-                        <pre>
-                            let y = 13. 
-                        </pre>
+                        <pre>let y = 13.</pre>
                         This syntax can be used to declare a block scope local variable. See Variable scope below.
                     </article>
             </section>
@@ -134,13 +128,9 @@
                     When you declare a variable within a function, it is called a local variable, because it is available only within that function. </p>
                     <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. 
                     For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
-                    <pre>
-                        if (true) { var x = 5; } console.log(x); // 5 
-                    </pre>
+                    <pre>if (true) { var x = 5; } console.log(x); // 5</pre>
                     This behavior changes, when using the let declaration introduced in ECMAScript 2015.
-                    <pre>
-                        if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
-                    </pre>
+                    <pre>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</pre>
                 </article>
             </section>
 
@@ -158,22 +148,19 @@
                 <article>
                 <p>You can create a read-only, named constant with the const keyword. 
                     The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+                    <pre>const PI = 3.14</pre>
+                    A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+                    The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+                    You cannot declare a constant with the same name as a function or variable in the same scope. For example:
                     <pre>
-                        const PI = 3.14
-                    </pre>
-                    <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
-                    <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
-                    <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-                    <pre>
-                        // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+                        // THIS WILL CAUSE AN ERROR function f(); const f = 5; // THIS
                         WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
                         //statements }
                     </pre>
                    However, objects attributes are not protected, so the following statement is executed without problems.
                    <pre>
                     const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = 
-                    "otherValue";
-                   </pre> 
+                    "otherValue"; </pre>
                 </article>
             </section>
 
@@ -204,11 +191,7 @@
                 <h2>if...else statement</h2>
                 <article>
                 <p> Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
-                    <pre>
-                    <code>
-                        if (condition) { statement_1; } else { statement_2; }
-                    </code>
-                    </pre>
+                    <pre>if (condition) { statement_1; } else { statement_2; }</pre>
                     condition can be any expression that evaluates to true or false. 
                     See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
                     You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
@@ -220,19 +203,17 @@
                     In the case of multiple conditions only the first logical condition which evaluates to true will be executed. 
                     To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
                     <pre>
+                    <code>
                         if (condition) { statement_1_runs_if_condition_is_true; 
                         statement_2_runs_if_condition_is_true; } else {
                         statement_3_runs_if_condition_is_false;
-                        statement_4_runs_if_condition_is_false; } 
+                        statement_4_runs_if_condition_is_false; }
+                    </code>
                     </pre>
                     It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
-                    <pre>
-                        (x = y) { /* if statements here */ }
-                    </pre>
+                    <pre>(x = y) { /* if statements here */ }</pre>
                     If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:
-                    <pre>
-                        if ((x = y)) {/* statements here */ }
-                    </pre>
+                    <pre>if ((x = y)) {/* statements here */ }</pre>
                 </article>
             </section>
 
@@ -278,7 +259,7 @@
                 <h2>Reference</h2>
                 <article>
                 <ul>
-                    <li>All the documentation in the page is taken from<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></li>
+                    <li id="doc-reference">All the documentation in the page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></li>
                 </ul>
                 </article>
              </section>

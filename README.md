@@ -2,6 +2,7 @@
 
 ## Overview
 This project focuses on an HTML technical documentation page for the **JavaScript** programming language. This is a very beneficial documentation for someone just starting up with JavaScript
+
 ## Preview
 ``` HTML
     <div id="content">
@@ -26,17 +27,20 @@ This project focuses on an HTML technical documentation page for the **JavaScrip
                 </nav>
    
 ```
+![JavaScript technical documentation](assets/images/document.png)
+
 ## Project technical
 This documentation page is built with;
 > HTML
 > CSS
 > Vs Code
+
 ## Installation
 A local copy of this project can be obtain at [this repository](git@github.com:AsohLove/Technical-documentation.git), navigate to the documentation index HTML file and open on a browser.
 
 
 ## Deployment
-
+[Deployed page](https://asohlove.github.io/Technical-documentation/)
 
 ### Author
 *Love Asoh*
