@@ -1,7 +1,7 @@
 # Technical Documentation
 
 ## Overview
-This project focuses on an HTML technical documentation page for the **Javascript** programming language. This is a very beneficial documentation for someone just starting up with Javascript
+This project focuses on an HTML technical documentation page for the **JavaScript** programming language. This is a very beneficial documentation for someone just starting up with JavaScript
 ## Preview
 ``` HTML
     <div id="content">
