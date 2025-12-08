@@ -30,7 +30,7 @@ This project focuses on an HTML technical documentation page for the **JavaScrip
 This documentation page is built with;
 > HTML
 > CSS
-> Vs Code 
+> Vs Code
 ## Installation
 A local copy of this project can be obtain at [this repository](git@github.com:AsohLove/Technical-documentation.git), navigate to the documentation index HTML file and open on a browser.
 
