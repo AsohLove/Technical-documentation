@@ -7,16 +7,16 @@ body {
   line-height: 2;
   margin: 0;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
 }
 
-#sidebar
-a {
+#sidebar,
+.nav-list {
   list-style-type: none;
   cursor: pointer;
   display: block;
   text-decoration: none;
-  padding: 12px 25px;
+  padding: 13px 25px;
   color: black;
 }
 
@@ -25,6 +25,8 @@ pre {
   text-align: left;
   margin: 13px;
   padding: 13px;
+  display: block;
+  white-space: pre-line;
 }
 
 #nav-document {
@@ -32,7 +34,7 @@ pre {
   top: 0;
   left: 0;
   padding: 20px;
-  width: 13%;
+  width: 14%;
   height: 100%;
   border-right: 1px solid black;
 }

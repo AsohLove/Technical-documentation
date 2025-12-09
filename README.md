@@ -1,7 +1,7 @@
 # Technical Documentation
 
 ## Overview
-This project focuses on an HTML technical documentation page for the **JavaScript** programming language. This is a very beneficial documentation for someone just starting up with JavaScript
+This project focuses on an HTML technical documentation page for the **JavaScript** programming language. This is a very beneficial documentation for someone just starting up with JavaScript. It's documents aspects in Javascript like variable, functions, constants, if-statements and many more.
 
 ## Preview
 ``` HTML
@@ -35,12 +35,23 @@ This documentation page is built with;
 > CSS
 > Vs Code
 
-## Installation
-A local copy of this project can be obtain at [this repository](git@github.com:AsohLove/Technical-documentation.git), navigate to the documentation index HTML file and open on a browser.
+## Project architecture
+This project has the folder following structure;
+- A `.github` folder that contains a linters file for checking errors in the code
+- An *asset* folder containing images
+- `README` file
+- Index file where all the HTML code is written
+- CSS file for styling the index HTML file
 
+## Installation
+To run the HTML file, you can do the following;
+- Get a local copy of this project either by cloning this [repository](git@github.com:AsohLove/Technical-documentation.git) on the terminal/command line or *Download ZIP* manually from the GitHub repository on the web. 
+- Navigate to the repository directory(using cd) or unzipped the manually downloaded repository
+- Locate the HTML file(index.html)
+- Double-click the HTML file to open it on your default browser or install and run it with a built-in server in your **IDE such as the Live Server extension in VS Code.**
 
 ## Deployment
-[Deployed page](https://asohlove.github.io/Technical-documentation/)
+The project can also be accessed on this [Deployed page](https://asohlove.github.io/Technical-documentation/).
 
 ### Author
 *Love Asoh*
