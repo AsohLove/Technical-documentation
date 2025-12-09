@@ -7,6 +7,7 @@ body {
   line-height: 2;
   margin: 0;
   display: flex;
+  overflow-y: auto;
 }
 
 #sidebar,
@@ -41,7 +42,6 @@ pre {
 #nav-document,
 #sidebar {
   padding: 0;
-  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -72,7 +72,8 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
-  #nav-document {
-    background-color: rgb(214 111 111);
-  }
+.content {
+  max-width: 320px;
+}
+
 }
