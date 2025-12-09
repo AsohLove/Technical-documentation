@@ -1,7 +1,7 @@
 # Technical Documentation
 
 ## Overview
-This project focuses on an HTML technical documentation page for the **JavaScript** programming language. This is a very beneficial documentation for someone just starting up with JavaScript. It's documents aspects in Javascript like variable, functions, constants, if-statements and many more.
+This project focuses on an HTML technical documentation page for the **JavaScript** programming language. This is a very beneficial documentation for someone just starting up with JavaScript. It's documents aspects in JavaScript like variable, functions, constants, if-statements and many more.
 
 ## Preview
 ``` HTML
@@ -45,7 +45,7 @@ This project has the folder following structure;
 
 ## Installation
 To run the HTML file, you can do the following;
-- Get a local copy of this project either by cloning this [repository](git@github.com:AsohLove/Technical-documentation.git) on the terminal/command line or *Download ZIP* manually from the GitHub repository on the web. 
+- Get a local copy of this project either by cloning this [repository](git@github.com:AsohLove/Technical-documentation.git) on the terminal/command-line or *Download ZIP* manually from the GitHub repository on the web.
 - Navigate to the repository directory(using cd) or unzipped the manually downloaded repository
 - Locate the HTML file(index.html)
 - Double-click the HTML file to open it on your default browser or install and run it with a built-in server in your **IDE such as the Live Server extension in VS Code.**
