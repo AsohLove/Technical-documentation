@@ -72,14 +72,15 @@ h2 {
   font-size: 30px;
 }
 
-/* @media (max-width: 800px) {
-  .sidebar {
-    width: 180px;
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  .nav-document {
+    width: 100%;
+    position: absolute;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
   }
 }
-
-@media (max-width: 450px;){
-  .sidebar {
-    width: 140px;
-  }  
-} */
